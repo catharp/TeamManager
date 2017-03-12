@@ -13,7 +13,7 @@
   }
 
   h4 {
-    margin-bottom: 7px;
+    margin-bottom: 5px;
   }
 
   h3, p {
@@ -25,5 +25,21 @@
     border-top: 2px solid $light-gray;
     margin: 10px 0;
     padding: 10px 0;
+  }
+
+  .member-photo {
+    display: inline-block;
+    width: 20%;
+    border-radius: 50%;
+    vertical-align: top;
+    padding: 10px 0;
+    box-sizing: border-box;
+  }
+
+  .member-info {
+    display: inline-block;
+    width: 80%;
+    padding: 8px 15px;
+    box-sizing: border-box;
   }
 }
