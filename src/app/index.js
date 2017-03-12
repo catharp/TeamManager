@@ -5,7 +5,7 @@ import { createStore, applyMiddleware } from 'redux';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 import App from './App';
-import MemberList from './memberList/MemberList';
+import MemberList from './memberList/MemberListContainer';
 import AddMember from './addMember/AddMember';
 import EditMember from './editMember/EditMember';
 
