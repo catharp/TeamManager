@@ -1,4 +1,4 @@
-import MemberList from './MemberListComponent';
+import MemberList from './memberListComponent';
 
 import { connect } from 'react-redux';
 

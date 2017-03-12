@@ -1,6 +1,29 @@
 .member-list {
 
-  h1 {
+  background-color: white;
+  border-radius: 3px;
+  max-width: 350px;
+  margin: auto;
+  padding: 20px;
+  text-align: left;
+
+  h1, h4 {
+    color: $black;
+    margin: 3px;
+  }
+
+  h4 {
+    margin-bottom: 7px;
+  }
+
+  h3, p {
     color: $gray;
+    margin: 3px;
+  }
+
+  .member-details {
+    border-top: 2px solid $light-gray;
+    margin: 10px 0;
+    padding: 10px 0;
   }
 }
