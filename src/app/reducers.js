@@ -1,7 +1,9 @@
+import memberListReducer from './memberList/memberListReducer';
+
 import { combineReducers } from 'redux';
 
 const rootReducer = combineReducers({
-  state: (state = {}) => state,
+  teamMembers: memberListReducer,
 });
 
 export default rootReducer;
