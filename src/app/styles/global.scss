@@ -47,6 +47,9 @@ p, .subtitle {
 
 .list-item {
   padding: 5px 0;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .divider {
