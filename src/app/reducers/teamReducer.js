@@ -4,7 +4,7 @@ const defaultTeam = {
       photo: 'https://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0/standard_xlarge.jpg',
       firstName: 'David',
       lastName: 'Banner',
-      email: 'bruce@culver.gov',
+      email: 'bruce@culver.org',
       phone: '800-HULK-OUT',
       role: 'admin'
     },
@@ -18,7 +18,7 @@ const defaultTeam = {
     },
     {
       photo: 'https://i.annihil.us/u/prod/marvel/i/mg/6/a0/55b6a25e654e6/standard_xlarge.jpg',
-      firstName: 'Tony',
+      firstName: 'Anthony',
       lastName: 'Stark',
       email: 'tony@stark.com',
       phone: '800-IRON-MAN',
@@ -26,9 +26,9 @@ const defaultTeam = {
     },
     {
       photo: 'https://i.annihil.us/u/prod/marvel/i/mg/3/50/537ba56d31087/standard_xlarge.jpg',
-      firstName: 'Steve',
+      firstName: 'Steven',
       lastName: 'Rogers',
-      email: 'srogers@usa.gov',
+      email: 'stever@usa.gov',
       phone: '800-AMERICA',
       role: 'regular'
     }
