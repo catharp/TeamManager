@@ -7,3 +7,7 @@ export const updateMember = member => ({
   type: 'UPDATE_MEMBER',
   member
 });
+
+export const deleteMember = () => ({
+  type: 'DELETE_MEMBER'
+});

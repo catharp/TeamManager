@@ -1,11 +1,11 @@
 import { connect } from 'react-redux';
 
-import { updateMember } from '../../actions/teamActions';
+import { deleteMember } from '../../actions/teamActions';
 
 import MemberInfoForm from './memberInfoFormComponent';
 
-const mapStateToProps = ({ team }) => ({ team });
+const mapStateToProps = ({ team }) => ({ editting: team.editting });
 
-const mapDispatchToProps = dispatch => ({ updateMember: member => dispatch(updateMember(member)) });
+const mapDispatchToProps = dispatch => ({ deleteMember: member => dispatch(deleteMember(member)) });
 
 export default connect(mapStateToProps, mapDispatchToProps)(MemberInfoForm);
