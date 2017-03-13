@@ -2,7 +2,7 @@ import MemberList from './memberListComponent';
 
 import { connect } from 'react-redux';
 
-const mapStateToProps = state => state;
+const mapStateToProps = ({ teamMembers }) => ({ teamMembers });
 
 const mapDispatchToProps = dispatch => ({});
 
