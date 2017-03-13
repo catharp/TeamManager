@@ -35,6 +35,9 @@ const defaultTeam = [
 
 export default (state = defaultTeam, action) => {
   switch(action.type) {
+    case 'ADD_MEMBER':
+      state.push(action.member);
+      return state;
     default:
       return state;
   }
