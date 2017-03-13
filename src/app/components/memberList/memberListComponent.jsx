@@ -12,7 +12,7 @@ export default ({ team, setEditting }) => (
         <div className="list-item">
           <img className="member-photo" src={ member.photo || "../../static/assets/defaultUser.png"} />
           <div className="member-info">
-            <h4>{ member.firstName } { member.lastName } { member.role === 'Admin' ? '(admin)' : null }</h4>
+            <h4>{ member.firstName } { member.lastName } { member.role === 'admin' ? '(admin)' : null }</h4>
             <p>{ member.phone }</p>
             <p>{ member.email }</p>
           </div>
