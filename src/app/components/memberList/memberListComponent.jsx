@@ -5,7 +5,7 @@ export default ({ team, setEditting }) => (
   <div className="container member-list">
     <Link to="/addMember"><span className="btn-corner glyphicon glyphicon-plus" /></Link>
     <h1>Team members</h1>
-    <h3 className="subtitle">You have { team.members.length } team members.</h3>
+    <h4 className="subtitle">You have { team.members.length } team members.</h4>
     <div className="divider"></div>
     { team.members.map( (member, index) => (
       <Link key={ member.firstName + member.lastName } onClick={ () => setEditting(index) } to="/editMember">
