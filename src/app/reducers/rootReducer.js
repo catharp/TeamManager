@@ -1,9 +1,9 @@
-import memberListReducer from './memberList/memberListReducer';
+import teamReducer from './teamReducer';
 
 import { combineReducers } from 'redux';
 
 const rootReducer = combineReducers({
-  teamMembers: memberListReducer,
+  teamMembers: teamReducer,
 });
 
 export default rootReducer;

@@ -8,7 +8,7 @@ export default ({ teamMembers }) => (
     <h3>You have { teamMembers.length } team members.</h3>
     { Object.keys(teamMembers).map( (memberId, i, arr, member = teamMembers[memberId]) => (
       <div className="member-details" key={ memberId }>
-        <img className="member-photo" src={ member.photo || "../static/assets/defaultUser.png"} />
+        <img className="member-photo" src={ member.photo || "../../static/assets/defaultUser.png"} />
         <div className="member-info">
           <h4>{ member.name } { member.role === 'Admin' ? '(admin)' : null }</h4>
           <p>{ member.phone }</p>
