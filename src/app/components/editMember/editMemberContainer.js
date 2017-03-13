@@ -4,7 +4,7 @@ import { updateMember } from '../../actions/teamActions';
 
 import EditMember from './editMemberComponent';
 
-const mapStateToProps = ({ handleSubmit }) => ({ handleSubmit });
+const mapStateToProps = ({ team, handleSubmit }) => ({ team, handleSubmit });
 
 const mapDispatchToProps = dispatch => ({ updateMember: member => dispatch(updateMember(member)) });
 
