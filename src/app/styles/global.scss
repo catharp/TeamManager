@@ -16,7 +16,7 @@ body {
   padding: 20px;
   text-align: left;
 
-  h1, h4 {
+  h1, h3, h4, p {
     color: $black;
     margin: 3px;
     clear: both;
@@ -26,9 +26,8 @@ body {
     margin-bottom: 5px;
   }
 
-  h3, p {
+  p, .subtitle {
     color: $gray;
-    margin: 3px;
   }
 
   .btn-corner {
