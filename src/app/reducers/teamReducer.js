@@ -38,8 +38,14 @@ const defaultTeam = {
 
 export default (state = defaultTeam, action) => {
   switch(action.type) {
-    case 'ADD_MEMBER':
-      return { ...state, members: [...state.members, action.member] };
+    case 'UPDATE_MEMBER':
+      if (state.editting === null) {
+        state.members.push(action.member);
+        return state;
+      } else {
+        state.members.splice(state.editting, 1, action.member);
+        return state;
+      }
     case 'SET_EDITTING':
       return { ...state, editting: action.index };
     default:

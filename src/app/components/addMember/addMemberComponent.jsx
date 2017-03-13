@@ -3,12 +3,12 @@ import { browserHistory, Link } from 'react-router';
 
 import MemberInfoForm from '../../forms/memberInfoForm';
 
-export default ({ addMember }) => (
+export default ({ updateMember }) => (
   <div className="container add-member">
     <Link to="/"><span className="btn-corner glyphicon glyphicon-remove" /></Link>
     <h1>Add a team member</h1>
     <h3 className="subtitle">Set email, location and role.</h3>
     <div className="divider"></div>
-    <MemberInfoForm onSubmit={ member => { addMember(member); browserHistory.push('/') } } />
+    <MemberInfoForm onSubmit={ member => { updateMember(member); browserHistory.push('/') } } />
   </div>
 )

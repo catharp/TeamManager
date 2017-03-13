@@ -1,6 +1,6 @@
-export const addMember = member => {
+export const updateMember = member => {
   return ({
-    type: 'ADD_MEMBER',
+    type: 'UPDATE_MEMBER',
     member
   });
 };
