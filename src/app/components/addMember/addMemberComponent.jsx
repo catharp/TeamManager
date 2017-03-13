@@ -9,6 +9,6 @@ export default ({ updateMember }) => (
     <h1>Add a team member</h1>
     <h4 className="subtitle">Set email, location and role.</h4>
     <div className="divider"></div>
-    <MemberInfoForm onSubmit={ member => { updateMember(member); browserHistory.push('/') } } />
+    <MemberInfoForm initialValues={{role: 'regular'}} onSubmit={ member => { updateMember(member); browserHistory.push('/') } } />
   </div>
 )

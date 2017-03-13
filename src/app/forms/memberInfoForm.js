@@ -16,6 +16,5 @@ const MemberInfoForm = ({ handleSubmit }) => (
 )
 
 export default reduxForm({
-  form: 'addMember',
-  initialValues: {role: 'regular'}
+  form: 'addMember'
 })(MemberInfoForm);
