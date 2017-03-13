@@ -15,32 +15,55 @@ body {
   margin: 20px auto;
   padding: 20px;
   text-align: left;
+}
 
-  h1, h3, h4, p {
-    color: $black;
-    margin: 3px;
-    clear: both;
+h1, h3, h4, p {
+  color: $black;
+  margin: 5px 0;
+  clear: both;
+}
+
+h4 {
+  margin-bottom: 5px;
+}
+
+p, .subtitle {
+  color: $gray;
+}
+
+.btn-corner {
+  display: block;
+  float: right;
+  font-size: 1.5em;
+  &:hover {
+    cursor: pointer;
   }
+}
 
-  h4 {
-    margin-bottom: 5px;
-  }
+.list-item, .divider {
+  border-bottom: 2px solid $light-gray;
+  margin: 10px 0;
+}
 
-  p, .subtitle {
-    color: $gray;
-  }
+.list-item {
+  padding: 5px 0;
+}
 
-  .btn-corner {
-    display: block;
+.divider {
+  margin-top: 20px;
+}
+
+input {
+  margin: 10px 0;
+  border-radius: 3px;
+  padding: 5px;
+
+  &[type=radio] {
     float: right;
-    font-size: 1.5em;
-    &:hover {
-      cursor: pointer;
-    }
+    margin: 5px;
   }
 
-  .list-item, .divider {
-    border-bottom: 2px solid $light-gray;
-    margin: 10px 0;
+  &[type=text] {
+    width: 100%;
   }
 }
