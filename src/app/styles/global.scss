@@ -35,9 +35,6 @@ p, .subtitle {
   display: block;
   float: right;
   font-size: 1.5em;
-  &:hover {
-    cursor: pointer;
-  }
 }
 
 .list-item, .divider {
@@ -47,9 +44,6 @@ p, .subtitle {
 
 .list-item {
   padding: 5px 0;
-  &:hover {
-    cursor: pointer;
-  }
 }
 
 .divider {
