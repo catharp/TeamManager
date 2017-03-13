@@ -2,7 +2,7 @@ import AddMember from './addMemberComponent';
 
 import { connect } from 'react-redux';
 
-const mapStateToProps = ({}) => ({});
+const mapStateToProps = ({ handleSubmit }) => ({ handleSubmit });
 
 const mapDispatchToProps = dispatch => ({});
 
