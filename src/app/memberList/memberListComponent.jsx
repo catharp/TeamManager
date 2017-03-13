@@ -4,7 +4,7 @@ import { browserHistory } from 'react-router';
 export default ({ teamMembers }) => {
   return (
     <div className="container member-list">
-      <span className="add-member glyphicon glyphicon-plus" onClick={ () => browserHistory.push('/addMember') } />
+      <span className="btn-corner glyphicon glyphicon-plus" onClick={ () => browserHistory.push('/addMember') } />
       <h1>Team members</h1>
       <h3>You have { teamMembers.length } team members.</h3>
       { Object.keys(teamMembers).map( (memberId, i, arr, member = teamMembers[memberId]) => (

@@ -3,8 +3,7 @@ import Header from './header/Header';
 
 function App({ children }) {
   return (
-    <div className="container">
-      <Header />
+    <div>
       {children}
     </div>
   );

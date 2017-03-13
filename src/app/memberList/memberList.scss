@@ -1,36 +1,5 @@
 .member-list {
 
-  background-color: white;
-  border-radius: 3px;
-  max-width: 400px;
-  margin: auto;
-  padding: 20px;
-  text-align: left;
-
-  h1, h4 {
-    color: $black;
-    margin: 3px;
-    clear: both;
-  }
-
-  h4 {
-    margin-bottom: 5px;
-  }
-
-  h3, p {
-    color: $gray;
-    margin: 3px;
-  }
-
-  .add-member {
-    display: block;
-    float: right;
-    font-size: 1.5em;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
   .member-details {
     border-top: 2px solid $light-gray;
     margin: 10px 0;
