@@ -1,7 +1,7 @@
 import React from 'react';
 import { browserHistory, Link } from 'react-router';
 
-import MemberInfoForm from '../../forms/memberInfoForm';
+import MemberInfoForm from '../memberInfoForm/memberInfoFormContainer';
 
 export default ({ updateMember }) => (
   <div className="container add-member">

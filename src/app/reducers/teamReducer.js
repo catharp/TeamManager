@@ -41,13 +41,8 @@ export default (state = defaultTeam, action) => {
     case 'SET_EDITTING':
       return { ...state, editting: action.index };
     case 'UPDATE_MEMBER':
-      if (state.editting === null) {
-        state.members.push(action.member);
-        return state;
-      } else {
-        state.members.splice(state.editting, 1, action.member);
-        return state;
-      }
+      state.editting === null ? state.members.push(action.member) : state.members.splice(state.editting, 1, action.member);
+      return state;
     default:
       return state;
   }
