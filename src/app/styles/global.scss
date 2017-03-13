@@ -39,4 +39,9 @@ body {
       cursor: pointer;
     }
   }
+
+  .list-item, .divider {
+    border-bottom: 2px solid $light-gray;
+    margin: 10px 0;
+  }
 }
