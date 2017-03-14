@@ -12,7 +12,7 @@ const MemberInfoForm = ({ editting, deleteMember, handleSubmit }) => (
     <h3>Role</h3>
     <p className="list-item"><Field name="role" component="input" type="radio" value="regular" />Regular - Can't delete members</p>
     <p className="list-item"><Field name="role" component="input" type="radio" value="admin" />Admin - Can delete members</p>
-    { editting !== null ? <button className="btn-delete" type="button" onClick={ () => {deleteMember(); browserHistory.push('/') } }>Delete Member</button> : null }
+    { editting ? <button className="btn-delete" type="button" onClick={ () => {deleteMember(); browserHistory.push('/') } }>Delete Member</button> : null }
     <button type="submit">Save</button>
   </form>
 )
