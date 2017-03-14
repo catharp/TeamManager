@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,300);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  background-color: $light-gray;
+}
+
+.container {
+  background-color: white;
+  border-radius: 3px;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: left;
+}
+
+h1, h3, h4, p {
+  color: $black;
+  margin: 5px 0;
+  clear: both;
+}
+
+h4 {
+  margin-bottom: 5px;
+}
+
+p, label, .subtitle {
+  color: $gray;
+}
+
+.btn-corner {
+  display: block;
+  float: right;
+  font-size: 1.5em;
+}
+
+.list-item, .divider {
+  border-bottom: 2px solid $light-gray;
+  margin: 10px 0;
+}
+
+.list-item {
+  padding: 5px 0;
+}
+
+.divider {
+  margin-top: 20px;
+}
+
+input {
+  margin: 10px 0;
+  border-radius: 3px;
+  padding: 5px;
+
+  &[type=radio] {
+    float: right;
+    margin: 5px;
+    &:checked+span {
+      color: $black;
+    }
+  }
+
+  &[type=text] {
+    width: 100%;
+  }
+}
+
+label {
+  width: 100%;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+button {
+  margin: 5px 0;
+  padding: 5px 10px;
+  &[type=submit] {
+    float: right;
+  }
+  &.btn-delete {
+    color: $red;
+  }
+}

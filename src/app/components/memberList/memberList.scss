@@ -1,0 +1,18 @@
+.member-list {
+
+  .member-photo {
+    display: inline-block;
+    width: 20%;
+    border-radius: 50%;
+    vertical-align: top;
+    padding: 10px 0;
+    box-sizing: border-box;
+  }
+
+  .member-info {
+    display: inline-block;
+    width: 80%;
+    padding: 8px 15px;
+    box-sizing: border-box;
+  }
+}
