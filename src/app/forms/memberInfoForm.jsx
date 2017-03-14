@@ -1,5 +1,4 @@
 import React from 'react';
-import { browserHistory } from 'react-router';
 import { Field, reduxForm } from 'redux-form';
 
 const MemberInfoForm = ({ editting, deleteMember, handleSubmit }) => (
@@ -18,7 +17,7 @@ const MemberInfoForm = ({ editting, deleteMember, handleSubmit }) => (
       <Field name="role" component="input" type="radio" value="admin" />
       <span>Admin - Can delete members</span>
     </label>
-    { editting ? <button className="btn-delete" type="button" onClick={ () => {deleteMember(); browserHistory.push('/') } }>Delete Member</button> : null }
+    { editting ? <button className="btn-delete" type="button" onClick={deleteMember}>Delete Member</button> : null }
     <button type="submit">Save</button>
   </form>
 )
