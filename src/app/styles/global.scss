@@ -27,7 +27,7 @@ h4 {
   margin-bottom: 5px;
 }
 
-p, .subtitle {
+p, label, .subtitle {
   color: $gray;
 }
 
@@ -58,10 +58,20 @@ input {
   &[type=radio] {
     float: right;
     margin: 5px;
+    &:checked+span {
+      color: $black;
+    }
   }
 
   &[type=text] {
     width: 100%;
+  }
+}
+
+label {
+  width: 100%;
+  &:hover {
+    cursor: pointer;
   }
 }
 

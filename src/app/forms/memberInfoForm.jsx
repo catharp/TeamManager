@@ -10,8 +10,14 @@ const MemberInfoForm = ({ editting, deleteMember, handleSubmit }) => (
     <Field name="email" component="input" type="text" />
     <Field name="phone" component="input" type="text" />
     <h3>Role</h3>
-    <p className="list-item"><Field name="role" component="input" type="radio" value="regular" />Regular - Can't delete members</p>
-    <p className="list-item"><Field name="role" component="input" type="radio" value="admin" />Admin - Can delete members</p>
+    <label className="list-item">
+      <Field name="role" component="input" type="radio" value="regular" />
+      <span>Regular - Can't delete members</span>
+    </label>
+    <label className="list-item">
+      <Field name="role" component="input" type="radio" value="admin" />
+      <span>Admin - Can delete members</span>
+    </label>
     { editting ? <button className="btn-delete" type="button" onClick={ () => {deleteMember(); browserHistory.push('/') } }>Delete Member</button> : null }
     <button type="submit">Save</button>
   </form>
